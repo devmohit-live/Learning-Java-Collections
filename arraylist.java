@@ -6,7 +6,7 @@ import java.util.List;
 
 public class arraylist {
     public static void main(final String[] args) {
-        // default cap =10
+        // default cap =10, increases with 1.5*initalcap
         List<Integer> intlist = new ArrayList<Integer>();
         intlist.add(1);
         intlist.add(2);
