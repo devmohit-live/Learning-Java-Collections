@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 // import java.util.Scanner;
 
 public class arraylist {
     public static void main(final String[] args) {
-        // final Scanner sc = new Scanner(System.in);
+        // default cap =10
         List<Integer> intlist = new ArrayList<Integer>();
         intlist.add(1);
         intlist.add(2);
@@ -58,6 +59,21 @@ public class arraylist {
         for (Integer i : obj) {
             System.out.println(i);
         }
+
+        // Other Construcutors:
+
+        // ArrayList<Generic> ob=new ArrayList(int initial_limit)
+        ArrayList<Integer> ob1 = new ArrayList(20);
+        // System.out.println("Size of ob1 is " + ob1.size());
+        for (int i = 0; i < 10; i++) {
+            ob1.add(i);
+        }
+        // System.out.println("Size now of ob1 is " + ob1.size());
+        System.out.println(ob1);
+
+        // ArrayList<Generic> ob=new ArrayList(Collection c);
+        ArrayList<Integer> ob2 = new ArrayList(linkedlist);
+        System.out.println(ob2);
 
     }
 }
