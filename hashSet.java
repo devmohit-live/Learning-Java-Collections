@@ -21,7 +21,7 @@ public class hashSet {
         HashSet<Integer> h1 = new HashSet<>(10); // initial cap =10,fillratio=0.75
         HashSet<Integer> h2 = new HashSet<>(cap, lf); // initial cap =10,fillratio=0.9
         HashSet<Integer> h3 = new HashSet<>(a); // from collection a interconversion
-
+        HashSet wg = new HashSet();
         h.add(10);
         h.add(20);
         h.add(30);
@@ -37,12 +37,15 @@ public class hashSet {
         h2.add(30);
         h2.add(40);
         h2.add(10);
-
+        wg.add('A');
+        wg.add(10);
+        wg.add(null);
+        wg.add('M');
         System.out.println("hashset 1 " + h);
         System.out.println("hashset 2 " + h1);
         System.out.println("hashset 3 " + h2);
         System.out.println("hashset 2 " + h3);
-
+        System.out.println("Wihtour generic " + wg);
         System.out.println("the add method is of boolean type returns fasle of you try to add a duplicate element");
         System.out.println("Adding 10(duplicate) =>  " + h.add(10));
 
