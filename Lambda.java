@@ -22,3 +22,11 @@ class Lambda {
         }
     }
 }
+
+class AbsSort implements Comparator<Integer> {
+    //
+
+    public int compare(Integer a, Integer b) {
+        return Math.abs(a) - Math.abs(b);
+    }
+}
